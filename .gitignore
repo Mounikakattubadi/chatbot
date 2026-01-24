@@ -7,3 +7,6 @@ backend/chathistory.json
 # Node / Vue
 node_modules/
 dist/
+
+*.env
+

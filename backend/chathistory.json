@@ -118,5 +118,21 @@
   {
     "role": "bot",
     "content": "Hey! I\u2019m not sure I caught what you meant by \u201cgannu.\u201d Could you tell me a bit more? Are you looking for a song recommendation, something in a particular language, or something else entirely? Let me know\u2014I\u2019m happy to help!"
+  },
+  {
+    "role": "user",
+    "content": "im mounika"
+  },
+  {
+    "role": "bot",
+    "content": "Nice to meet you, Mounika! \ud83c\udf38 How\u2019s everything going for you today?  \n\n- Anything fun or interesting you\u2019d like to talk about?  \n- Got any questions, ideas, or plans you need a hand with?  \n\nI\u2019m here to help\u2014just let me know what you need!"
+  },
+  {
+    "role": "user",
+    "content": "ask me some quetion"
+  },
+  {
+    "role": "bot",
+    "content": "Sure thing! Here are a few questions to get the conversation rolling\u2014feel free to answer any or all of them, or let me know if there\u2019s a different topic you\u2019d like to dive into.\n\n1. **What\u2019s a hobby or activity you\u2019ve been enjoying lately?**  \n2. **If you could travel anywhere in the world right now, where would you go and why?**  \n3. **What\u2019s a book, movie, or TV show that\u2019s stuck with"
   }
 ]

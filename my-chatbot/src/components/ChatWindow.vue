@@ -1,33 +1,42 @@
 <template>
   <div
-    class="flex flex-col h-[80vh] p-4 border rounded-lg bg-gray-50 overflow-y-auto"
+    id="chatWindow"
+    class="flex-1 overflow-y-auto px-6 py-6 bg-[#0f0f0f] space-y-4"
   >
     <MessageBubble
-      v-for="(msg, index) in messages"
-      :key="index"
+      v-for="(msg, i) in messages"
+      :key="i"
       :message="msg.text"
       :isUser="msg.user"
     />
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent, PropType } from "vue";
+<script>
+import { onUpdated } from "vue";
 import MessageBubble from "./MessageBubble.vue";
 
-interface ChatMessage {
-  text: string;
-  user: boolean;
-}
-
-export default defineComponent({
+export default {
+  props: ["messages"],
   components: { MessageBubble },
-
-  props: {
-    messages: {
-      type: Array as PropType<ChatMessage[]>,
-      required: true
-    }
+  setup() {
+    onUpdated(() => {
+      const el = document.getElementById("chatWindow");
+      el?.scrollTo({ top: el.scrollHeight, behavior: "smooth" });
+    });
   }
-});
+};
 </script>
+
+<style scoped>
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e2e2e;
+  border-radius: 10px;
+}
+</style>

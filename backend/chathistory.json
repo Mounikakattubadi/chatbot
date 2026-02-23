@@ -302,5 +302,61 @@
   {
     "role": "bot",
     "content": "## Free UI/UX Tools (2024\u20112026)\n\nBelow is a curated list of **completely free** (no\u2011cost, no\u2011time\u2011limited trial) tools you can use for every stage of a UI/UX workflow\u2014research, wire\u2011framing, visual design, prototyping,"
+  },
+  {
+    "role": "user",
+    "content": "hey!"
+  },
+  {
+    "role": "bot",
+    "content": "Hey there! \ud83d\udc4b  \n\nWhat\u2019s on your mind today? Are you looking for more UI/UX resources, need help with a design challenge, or something completely different? Let me know\u2014I\u2019m happy to help!"
+  },
+  {
+    "role": "user",
+    "content": "uiux"
+  },
+  {
+    "role": "bot",
+    "content": "## UI/UX 101 \u2013 A Quick\u2011Start Playbook  \n\nWhether you\u2019re a complete beginner, a developer who wants to add design chops, or a product manager looking to speak the designer\u2019s language, this guide will give you a **clear roadmap** to understand, practice, and showcase UI/UX without"
+  },
+  {
+    "role": "user",
+    "content": "fugma"
+  },
+  {
+    "role": "bot",
+    "content": "I\u2019m not sure what you mean by \u201cfugma.\u201d Could you clarify or let me know how I can help you?"
+  },
+  {
+    "role": "user",
+    "content": "figma"
+  },
+  {
+    "role": "bot",
+    "content": "## \ud83c\udfa8 Figma \u2013 The Free\u2011First UI/UX Design Platform  \n\nFigma has become the go\u2011to tool for designers, product teams, and developers because it lives **in the browser**, syncs in real\u2011time, and offers a generous free tier that\u2019s more than enough for individuals, students, and small side projects. Below is everything you need to"
+  },
+  {
+    "role": "user",
+    "content": "hi"
+  },
+  {
+    "role": "bot",
+    "content": "Hey there! \ud83d\udc4b\n\nHow can I help you today? Whether you\u2019re looking for UI/UX advice, design tool tips, a quick prototype walkthrough, or anything else, just let me know!"
+  },
+  {
+    "role": "user",
+    "content": "hi"
+  },
+  {
+    "role": "bot",
+    "content": "Hey! \ud83d\udc4b  \n\nGreat to see you here. How can I help you today? Whether you\u2019re curious about UI/UX, need a quick design tip, want to explore Figma, or anything else, just let me know!"
+  },
+  {
+    "role": "user",
+    "content": "uiux"
+  },
+  {
+    "role": "bot",
+    "content": "## UI\u202f/\u202fUX Crash Course \u2013 From Zero to \u201cI Can Design\u201d \ud83d\ude80\n\nBelow is a **step\u2011by\u2011step playbook** you can follow today, whether you\u2019re a developer, product manager, marketer, or anyone who wants to understand (and eventually practice) UI\u202fand\u202fUX design.\n\n---\n\n### 1\ufe0f\u20e3 What\u2019s the Difference?"
   }
 ]

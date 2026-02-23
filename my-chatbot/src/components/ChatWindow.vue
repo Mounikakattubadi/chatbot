@@ -13,13 +13,29 @@
 </template>
 
 <script>
-import { onUpdated } from "vue";
+import { onMounted, onUpdated } from "vue";
 import MessageBubble from "./MessageBubble.vue";
 
 export default {
   props: ["messages"],
   components: { MessageBubble },
   setup() {
+
+    // ⬇️ CALL YOUR BACKEND HERE
+    onMounted(async () => {
+      const api = import.meta.env.VITE_API_URL;
+
+      try {
+        const res = await fetch(`${api}/hello`);
+        const data = await res.json();
+
+        console.log("Backend Response:", data);
+      } catch (err) {
+        console.error("Backend API Error:", err);
+      }
+    });
+
+    // auto-scroll when messages update
     onUpdated(() => {
       const el = document.getElementById("chatWindow");
       el?.scrollTo({ top: el.scrollHeight, behavior: "smooth" });

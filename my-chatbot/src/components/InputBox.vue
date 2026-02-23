@@ -19,14 +19,36 @@
 
 <script>
 export default {
-  emits: ["send"],
+  emits: ["send", "reply"],
   data() {
     return { text: "" };
   },
   methods: {
-    sendMsg() {
+    async sendMsg() {
       if (!this.text.trim()) return;
+
+      // Emit user's message to parent
       this.$emit("send", this.text);
+
+      // Call backend API
+      const api = import.meta.env.VITE_API_URL;
+
+      try {
+        const res = await fetch(`${api}/chat`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message: this.text })
+        });
+
+        const data = await res.json();
+
+        // Send backend reply to parent
+        this.$emit("reply", data.reply);
+
+      } catch (error) {
+        console.error("Backend error:", error);
+      }
+
       this.text = "";
     }
   }
